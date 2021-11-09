@@ -1,0 +1,14 @@
+.header {
+    background: black;
+}
+.header a {
+    color: white;
+}
+
+.header li {
+    padding: 15px;
+}
+
+#greeting {
+    margin-top: 20px;
+}

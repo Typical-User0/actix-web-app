@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+</head>
+<body>
+<header class="header">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" href="/">Main page</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/articles">Articles</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        {{#if is_login}}
+            <li class="nav-item">
+                <a class="nav-link" href="/logout">Logout</a>
+            </li>
+        {{else}}
+            <li class="nav-item">
+                <a class="nav-link" href="/signup">Signup</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+            </li>
+        {{/if}}
+
+        <li class="nav-item">
+            {{#if is_login}}
+
+            {{/if}}
+        </li>
+    </ul>
+</header>
+
+</body>
+</html>

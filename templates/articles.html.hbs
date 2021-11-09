@@ -1,0 +1,11 @@
+{{>base}}
+
+<h1>
+    Articles
+</h1>
+
+{{#if articles}}
+{{#each articles }}
+    <a href="/articles/{{ this.number }}"><p>{{this}}</p></a>
+{{/each}}
+{{/if}}
